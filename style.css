@@ -1,0 +1,140 @@
+/* Navbar style */
+.navbar-brand {
+  color: green !important;
+}
+
+/* Global Reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon styling */
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+
+/* Main content styling */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Shopping Cart Container */
+.shopping-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 50px 0;
+  width: 80%;  /* Ensure it's not too wide */
+}
+
+/* Total price display */
+.total-price span {
+  font-size: 30px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 32px;
+  color: green;
+}
+
+/* Product List Styling */
+.list-products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  margin-top: 30px;
+  width: 100%; /* Ensures the products take the full width of the container */
+  gap: 20px;  /* Add some space between the cards */
+}
+
+/* Card Styling */
+.card {
+  width: 18rem;  /* Fixed width for consistency */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Card Body Styling */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quantity Styling */
+.quantity {
+  font-size: 25px;
+  margin: 0 10px;
+  font-weight: bold;
+  color: #333;  /* Dark color for visibility */
+}
+
+/* Quantity buttons and other icons styling */
+.card-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  font-size: 25px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Trash icon (Delete button) */
+.fa-trash-alt {
+  color: #de6b5c;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+.fa-trash-alt:hover {
+  color: red;  /* Change color on hover for emphasis */
+}
+
+/* Heart icon (Like button) */
+.like-button {
+  cursor: pointer;
+  font-size: 25px;
+  color: gray;  /* Default color for empty heart */
+  transition: color 0.3s ease-in-out;
+}
+
+.liked {
+  color: red;  /* Color when the item is liked */
+}
+
+.like-button:hover {
+  color: darkred;  /* Hover effect for like button */
+}
+
+/* Total Price Styling */
+.total-price {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
